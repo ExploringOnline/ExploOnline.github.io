@@ -6,6 +6,7 @@
 -->
 <html>
 	<head>
+        <link rel="icon" href="images/avionsito.ico">
 		<title>Exploring Online </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,6 +28,33 @@
 		</style>
 	</head>
 	<body>
+        
+        <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="100458528405876"
+  theme_color="#20cef5"
+  logged_in_greeting="Hola, en qué podemos ayudarte"
+  logged_out_greeting="Hola, en qué podemos ayudarte">
+      </div>
     
 
 		<!-- Header -->
@@ -126,10 +154,16 @@
 							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
+						
+                        
+                        <div class="copyright">
+					&copy; Todos los derechos reservados.
+				</div>					
+                 
+
 					</footer>
 
-			</div>
+			
         
         <a class="appWhatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=573023453704%20Hola%20en%20que%20te%20podemos%20ayudar"><img src="tienda/img/whatsapp.png" hwight></a>
 
